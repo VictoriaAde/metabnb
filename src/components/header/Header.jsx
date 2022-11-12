@@ -1,4 +1,3 @@
-import Nav from '../nav/Nav';
 import image1 from './assets/image-1.svg';
 import image2 from './assets/image-2.svg';
 import image3 from './assets/image-3.svg';
@@ -10,8 +9,7 @@ import opensea from './assets/opensea.svg';
 const Header = () => {
   return (
     <>
-      <Nav />
-      <header className="md:!px-5 md:text-center md:gap-0 xxl:mt-28 xxl:px-24 xxl:grid xxl:grid-cols-3 md:!grid-cols-1 xxl:gap-8 ">
+      <header className="md:!px-5 md:text-center md:gap-0 xxl:mt-28 xxl:pr-0 xxl:pl-24 xxl:grid xxl:grid-cols-4 md:!grid-cols-1 xxl:gap-20 ">
         <div className="xxl:col-span-2 md:col-span-full">
           <h1 className="md:!text-3xl xxl:text-5xl text-gray mb-9 font-normal">
             Rent a <span className="text-purple">Place</span> away from{' '}
@@ -28,7 +26,7 @@ const Header = () => {
             <div className="mt-12 md:flex">
               <input
                 type="search"
-                className="search_bg appearance-none md:w-48 xxl:py-4 md:py-3 px-3 focus:outline-none border border-solid border-grayTwo text-black text-base"
+                className="search_bg appearance-none md:!w-48 xxl:w-96 xxl:py-4 md:py-3 px-3 focus:outline-none border border-solid border-grayTwo text-black text-base"
                 placeholder="Search for location"
                 required
               />
@@ -38,7 +36,7 @@ const Header = () => {
             </div>
           </form>
         </div>
-        <div className="xxl:flex gap-2 md:!hidden relative">
+        <div className="xxl:col-span-2 xxl:flex gap-2 md:!hidden relative">
           <div className="mt-20">
             <img src={image1} alt="" className="mb-2" />
             <img src={image2} alt="" />

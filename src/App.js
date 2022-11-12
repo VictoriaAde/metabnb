@@ -1,15 +1,20 @@
-import Cta from './components/cta/Cta';
-import Header from './components/header/Header';
-import Halfnfts from './components/place-to-stay/half-nfts/Halfnfts';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+import Main from './components/Main';
+import Nav from './components/nav/Nav';
+import Nft from './components/place-to-stay/Nft';
 import './index.css';
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Halfnfts />
-      <Cta />
-    </main>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route path="/Place-to-stay" element={<Nft />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
