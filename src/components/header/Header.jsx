@@ -9,9 +9,9 @@ import opensea from './assets/opensea.svg';
 const Header = () => {
   return (
     <>
-      <header className="md:!px-5 md:text-center md:gap-0 xxl:mt-28 xxl:pr-0 xxl:pl-24 xxl:grid xxl:grid-cols-4 md:!grid-cols-1 xxl:gap-20 ">
+      <header className="white_bg md:!px-5 md:text-center md:gap-0 xxl:mt-48 xxl:pr-0 xxl:pl-24 xxl:grid xxl:grid-cols-4 md:!grid-cols-1 xxl:gap-20 ">
         <div className="xxl:col-span-2 md:col-span-full">
-          <h1 className="md:!text-3xl xxl:text-5xl text-gray mb-9 font-normal">
+          <h1 className="xxl:text-5xl sm:!text-3xl text-gray mb-9 font-normal">
             Rent a <span className="text-purple">Place</span> away from{' '}
             <span className="text-purple">Home</span> in the
             <span className="text-purple"> Metaverse</span>
@@ -23,14 +23,14 @@ const Header = () => {
           </p>
 
           <form>
-            <div className="mt-12 md:flex">
+            <div className="mt-12 md:flex justify-center">
               <input
                 type="search"
-                className="search_bg appearance-none md:!w-48 xxl:w-96 xxl:py-4 md:py-3 px-3 focus:outline-none border border-solid border-grayTwo text-black text-base"
+                className="search_bg appearance-none xxl:w-96 lg:!w-56 xxl:py-4 md:py-3 px-3 focus:outline-none border border-solid border-grayTwo text-black text-base"
                 placeholder="Search for location"
                 required
               />
-              <button className="search_btn text-white xxl:px-12 xxl:py-4 md:!px-2 md:py-3 xxl:rounded-r-lg">
+              <button className="search_btn text-white xxl:px-12 md:!px-3 xxl:py-4 md:py-3 xxl:rounded-r-lg">
                 Search
               </button>
             </div>
@@ -38,12 +38,12 @@ const Header = () => {
         </div>
         <div className="xxl:col-span-2 xxl:flex gap-2 md:!hidden relative">
           <div className="mt-20">
-            <img src={image1} alt="" className="mb-2" />
-            <img src={image2} alt="" />
+            <img src={image1} alt="" className="mb-2 lg:w-48" />
+            <img src={image2} alt="" className="mb-2 lg:w-48" />
           </div>
           <div>
-            <img src={image3} alt="" className="mb-2" />
-            <img src={image4} alt="" />
+            <img src={image3} alt="" className="mb-2 lg:w-48" />
+            <img src={image4} alt="" className="mb-2 lg:w-48" />
           </div>
         </div>
       </header>

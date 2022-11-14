@@ -18,7 +18,76 @@ import star from './assets/star.svg';
 
 const Nft = () => {
   return (
-    <section className="mt-16 xxl:px-24 md:!px-8 mb-12">
+    <section className="mt-48 xxl:px-24 md:!px-8 mb-12">
+      <nav>
+        <ul className="flex xxl:gap-12 md:!gap-9 justify-center flex-wrap my-6">
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Resturant
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Cottage
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Castle
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              fantast city
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              beach
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Carbins
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Off-grid
+            </a>
+          </li>
+          <li>
+            <a
+              className="text-xl text-gray"
+              href="https://github.com/VictoriaAde/metabnb"
+            >
+              Farm
+            </a>
+          </li>
+          <button className="text-xl text-gray">Location</button>
+        </ul>
+      </nav>
       <div className="xxl:grid xxl:grid-cols-4 md:!grid-cols-2 sm:!flex flex-col gap-5 mb-5">
         <div className="nft pt-4 pb-4 flex flex-col items-center ">
           <div>
