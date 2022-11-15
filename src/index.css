@@ -60,10 +60,10 @@
     display: none;
   }
   .show {
-    display: block;
+    display: flex;
   }
 
-  @media (max-width: 2440px) {
+  /* @media (max-width: 2440px) {
     .desktopNav {
       display: flex;
       align-items: center;
@@ -84,6 +84,7 @@
     }
     .desktopNav {
       display: none;
-    }
+    } 
   }
+    */
 }
