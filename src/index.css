@@ -52,70 +52,38 @@
   input[type='search']::-webkit-search-results-decoration {
     display: none;
   }
-  .mobile-nav {
-    position: absolute;
-    top: 120%;
-    transition: all 0.5s ease;
+  /* xxl:flex xxl:items-center xxl:justify-between  */
+
+  /* md:!hidden md:!flex-col md:gap-8 md:absolute md:top-16 md:right-4 md:bg-lightGray md:py-7 md:px-10 md:rounded-lg */
+
+  .hide {
+    display: none;
   }
-  .showMobileNav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 2rem 1rem 0.5rem 2rem;
-    background-color: #0f1d31;
-    box-shadow: -3px 17px 13px 4px #0f1a2b;
-  }
-  .menu_btn {
-    background-color: #a02279;
-    width: 30px;
-    height: 0;
-    position: relative;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
-  .menu_btn span {
-    background-color: #a02279;
-    background-color: #a02279;
+  .show {
     display: block;
-    position: absolute;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    border-radius: 9px;
-    opacity: 1;
-    transform: rotate(0deg);
-    transition: 0.25s ease-in-out;
   }
-  .menu_btn span:nth-child(1) {
-    top: 0px;
+
+  @media (max-width: 2440px) {
+    .desktopNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-  .menu_btn span:nth-child(2),
-  .menu_btn span:nth-child(3) {
-    top: 8px;
-  }
-  .menu_btn span:nth-child(4) {
-    top: 17px;
-  }
-  .menu_btn.open span:nth-child(1) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
-  }
-  .menu_btn.open span:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  .menu_btn.open span:nth-child(3) {
-    transform: rotate(-45deg);
-  }
-  .menu_btn.open span:nth-child(4) {
-    top: 18px;
-    width: 0%;
-    left: 50%;
+  @media (max-width: 800px) {
+    .mobileNav {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      position: absolute;
+      top: 4rem;
+      right: 3rem;
+      background: #b4b4b4;
+      padding: 3rem;
+      border-radius: 12px;
+    }
+    .desktopNav {
+      display: none;
+    }
   }
 }
