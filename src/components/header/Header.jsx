@@ -1,7 +1,7 @@
-import image1 from './assets/image-1.svg';
-import image2 from './assets/image-2.svg';
-import image3 from './assets/image-3.svg';
-import image4 from './assets/image-4.svg';
+import image1 from './assets/image-1.webp';
+import image2 from './assets/image-2.webp';
+import image3 from './assets/image-3.webp';
+import image4 from './assets/image-4.webp';
 import mbt from './assets/MBToken.svg';
 import metamask from './assets/metamask.svg';
 import opensea from './assets/opensea.svg';
@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <header className="white_bg md:!px-5 md:text-center md:gap-0 xxl:mt-48 xxl:pr-0 xxl:pl-24 xxl:grid xxl:grid-cols-4 md:!grid-cols-1 xxl:gap-20 ">
         <div className="xxl:col-span-2 md:col-span-full">
-          <h1 className="xxl:text-5xl sm:!text-3xl text-gray mb-9 font-normal">
+          <h1 className="xxl:text-5xl sm:!text-4xl text-gray mb-9 font-normal">
             Rent a <span className="text-purple">Place</span> away from{' '}
             <span className="text-purple">Home</span> in the
             <span className="text-purple"> Metaverse</span>

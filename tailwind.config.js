@@ -10,6 +10,7 @@ module.exports = {
         purple: '#a02279',
         black_bg: '#1D1D1E',
         milk: '#F1F3F9',
+        lightGray: '#B4B4B4',
       },
       screens: {
         xxl: { max: '1440px' },

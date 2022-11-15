@@ -1,26 +1,27 @@
-import image5 from './assets/image-5.svg';
-import image6 from './assets/image-6.svg';
-import image7 from './assets/image-7.svg';
-import image8 from './assets/image-8.svg';
-import image1 from './assets/image-1.svg';
-import image2 from './assets/image-2.svg';
-import image3 from './assets/image-3.svg';
-import image4 from './assets/image-4.svg';
-import imageA from './assets/image-A.svg';
-import imageB from './assets/image-B.svg';
-import imageC from './assets/image-C.svg';
-import imageD from './assets/image-D.svg';
-import imageE from './assets/image-E.svg';
-import imageF from './assets/image-F.svg';
-import imageG from './assets/image-G.svg';
-import imageH from './assets/image-H.svg';
+import image5 from './assets/image-5.webp';
+import image6 from './assets/image-6.webp';
+import image7 from './assets/image-7.webp';
+import image8 from './assets/image-8.webp';
+import image1 from './assets/image-1.webp';
+import image2 from './assets/image-2.webp';
+import image3 from './assets/image-3.webp';
+import image4 from './assets/image-4.webp';
+import imageA from './assets/image-A.webp';
+import imageB from './assets/image-B.webp';
+import imageC from './assets/image-C.webp';
+import imageD from './assets/image-D.webp';
+import imageE from './assets/image-E.webp';
+import imageF from './assets/image-F.webp';
+import imageG from './assets/image-G.webp';
+import imageH from './assets/image-H.webp';
 import star from './assets/star.svg';
+import settingIcon from './assets/setting.svg';
 
 const Nft = () => {
   return (
     <section className="mt-48 xxl:px-24 md:!px-8 mb-12">
       <nav>
-        <ul className="flex xxl:gap-12 md:!gap-9 justify-center flex-wrap my-6">
+        <ul className="flex xxl:gap-12 md:!gap-9 justify-center items-center flex-wrap mt-6 mb-16">
           <li>
             <a
               className="text-xl text-gray"
@@ -85,7 +86,10 @@ const Nft = () => {
               Farm
             </a>
           </li>
-          <button className="text-xl text-gray">Location</button>
+          <button className="text-xl text-gray border border-lightGray py-2 px-3 rounded-lg">
+            Location{' '}
+            <img className="ml-5 inline" src={settingIcon} alt="settings" />
+          </button>
         </ul>
       </nav>
       <div className="xxl:grid xxl:grid-cols-4 md:!grid-cols-2 sm:!flex flex-col gap-5 mb-5">

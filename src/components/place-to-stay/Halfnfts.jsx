@@ -1,11 +1,11 @@
-import image1 from './assets/image-1.svg';
-import image2 from './assets/image-2.svg';
-import image3 from './assets/image-3.svg';
-import image4 from './assets/image-4.svg';
-import image5 from './assets/image-5.svg';
-import image6 from './assets/image-6.svg';
-import image7 from './assets/image-7.svg';
-import image8 from './assets/image-8.svg';
+import image1 from './assets/image-1.webp';
+import image2 from './assets/image-2.webp';
+import image3 from './assets/image-3.webp';
+import image4 from './assets/image-4.webp';
+import image5 from './assets/image-5.webp';
+import image6 from './assets/image-6.webp';
+import image7 from './assets/image-7.webp';
+import image8 from './assets/image-8.webp';
 import star from './assets/star.svg';
 
 const Halfnfts = () => {

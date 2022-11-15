@@ -1,4 +1,4 @@
-import ctaImage from './cta-image.svg';
+import ctaImage from './cta-image.webp';
 
 const Cta = () => {
   return (

@@ -28,7 +28,7 @@ const Nav = () => {
   // });
   return (
     <>
-      <nav className="fixed top-0 white_bg w-full z-10 md:!hidden xxl:flex xxl:justify-between xxl:items-center xxl:py-5 xxl:px-24 lg:!px-10">
+      <nav className="fixed top-0 white_bg w-full z-10 md:!hidden xxl:flex xxl:justify-between xxl:items-center xxl:py-4 xxl:px-24 lg:!px-10">
         <div className="mb-4">
           <img src={logo} alt="metabnb" />
         </div>
