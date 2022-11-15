@@ -67,7 +67,7 @@ const Nav = () => {
                 <Link
                   to="/"
                   href="https://github.com/VictoriaAde/metabnb"
-                  className="xxl:text-xl text-gray"
+                  className="text-lg text-gray"
                 >
                   Home
                 </Link>
@@ -76,7 +76,7 @@ const Nav = () => {
                 <Link
                   to={`/Place-to-stay`}
                   href="https://github.com/VictoriaAde/metabnb"
-                  className="text-xl text-gray"
+                  className="text-lg text-gray"
                 >
                   Place to stay
                 </Link>
@@ -84,7 +84,7 @@ const Nav = () => {
               <li>
                 <a
                   href="https://github.com/VictoriaAde/metabnb"
-                  className="text-xl text-gray"
+                  className="text-lg text-gray"
                 >
                   NFTs
                 </a>
@@ -92,7 +92,7 @@ const Nav = () => {
               <li>
                 <a
                   href="https://github.com/VictoriaAde/metabnb"
-                  className="text-xl text-gray"
+                  className="text-lg text-gray"
                 >
                   Community
                 </a>
