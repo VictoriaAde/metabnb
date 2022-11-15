@@ -60,7 +60,7 @@ const Nav = () => {
       {/* mobile */}
       <nav className="fixed top-0 white_bg w-full z-10  xxl:hidden md:!flex justify-between items-center py-4 px-4">
         <img src={logo} alt="metabnb" className="w-40" />
-        <div className={isMobile ? 'show' : 'hide'}>
+        <div className={isMobile ? 'hide' : 'show'}>
           <div className="flex flex-col gap-5 absolute top-16 right-4 white_bg shadow-xl py-7 md:px-10 rounded-lg">
             <ul className="flex flex-col gap-3">
               <li>
