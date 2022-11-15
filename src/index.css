@@ -17,6 +17,9 @@
   .white_bg {
     background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   }
+  .tranparent {
+    background: rgba(64, 64, 64, 0.3);
+  }
   .search_bg {
     background: rgba(247, 247, 247, 0.1);
   }

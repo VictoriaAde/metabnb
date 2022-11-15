@@ -11,9 +11,13 @@ module.exports = {
         black_bg: '#1D1D1E',
         milk: '#F1F3F9',
         lightGray: '#B4B4B4',
+        lightMilk: '#F8F9FA',
+        line: '#CFD8DC',
+        darkGray: '#333333',
+        transparent: 'rgba(64, 64, 64, 0.3)',
       },
       screens: {
-        xxl: { max: '1440px' },
+        xxl: { max: '2440px' },
 
         xl: { max: '1279px' },
         // => @media (max-width: 1279px) { ... }

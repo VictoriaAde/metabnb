@@ -2,36 +2,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../modal/Modal';
 import logo from './assets/logo.svg';
-import metaImg from './assets/metamask.svg';
-import walletImg from './assets/wallet-connect.svg';
-import backIcon from './assets/back.svg';
-import x from './assets/x.svg';
 
 const Nav = () => {
-  const { notShowModal, setShowModal } = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
-  const showModal = () => setShowModal(true);
-  const hideModal = () => setShowModal(false);
-
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = (event) => {
-    // 👇️ toggle isActive state variable
-    setIsActive((current) => !current);
-  };
-  // let menuBtn = document.querySelector('.menu_btn');
-  // menuBtn.addEventListener('click', () => {
-  //   menuBtn.classList.toggle('open');
-
-  //   let mobileNav = document.querySelector('.mobile-nav');
-  //   mobileNav.classList.toggle('showMobileNav');
-  // });
   return (
     <>
+      {/*desktop navigation */}
       <nav className="fixed top-0 white_bg w-full z-10 md:!hidden xxl:flex xxl:justify-between xxl:items-center xxl:py-4 xxl:px-24 lg:!px-10">
-        <div className="mb-4">
-          <img src={logo} alt="metabnb" />
-        </div>
+        <img src={logo} alt="metabnb" className="w-40" />
+        <div className="mb-4"></div>
         <ul className="xxl:flex xxl:gap-x-12">
           <li>
             <Link
@@ -68,23 +48,27 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <button className="purple_bg text-white py-3 xxl:px-5 rounded-xl">
+        <button
+          onClick={() => setOpenModal(true)}
+          className="purple_bg text-white py-3 xxl:px-5 rounded-xl"
+        >
           Connect wallet
         </button>
+        <Modal open={openModal} onClose={() => setOpenModal(false)} />
       </nav>
-
-      <nav className="fixed top-0 white_bg w-full z-10 mobile-menu xxl:hidden md:!flex justify-between md:!py-5 md:!px-8">
+      {/* mobile navigation */}
+      <nav className=" mobile-menu fixed top-0 white_bg w-full z-10 xxl:hidden md:!flex justify-between md:!py-5 md:!px-8">
         <div className="">
           <img src={logo} alt="metabnb" className="w-28" />
         </div>
 
-        <button className="menu_btn" id="menuBtn" onClick={handleClick}>
+        <button className="menu_btn" id="menuBtn">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <div className="mobile-nav hidden" onClick={handleClick}>
+        <div className="mobile-nav hidden">
           <ul className="md:flex-col md:gap-y-7">
             <li>
               <Link
@@ -122,44 +106,11 @@ const Nav = () => {
             </li>
           </ul>
 
-          <button
-            onClick={showModal}
-            className="purple_bg text-white mt-5 py-3 w-full rounded-xl"
-          >
+          <button className="purple_bg text-white mt-5 py-3 w-full rounded-xl">
             Connect wallet
           </button>
         </div>
       </nav>
-
-      {notShowModal ? (
-        <Modal>
-          <div className="flex justify-center items-center bg_white rounded-2xl py-20">
-            <div>
-              <h1>Connect Wallet</h1>
-              <img onClick={hideModal} src={x} alt="close" />
-            </div>{' '}
-            <p>Choose your preferred wallet:</p>
-            <div>
-              <div>
-                <img src={metaImg} alt="Meta Mask" />
-                <h2>Metamask</h2>
-              </div>
-              <div>
-                <img src={backIcon} alt="" />
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={walletImg} alt="Meta Mask" />
-                <h2>WalletConnect</h2>
-              </div>
-              <div>
-                <img src={backIcon} alt="" />
-              </div>
-            </div>
-          </div>
-        </Modal>
-      ) : null}
     </>
   );
 };
