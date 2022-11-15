@@ -12,7 +12,7 @@ const Footer = () => {
         alt="logo"
         className="xxl:pb-24 md:!pb-10 xxl:hidden md:!block"
       />
-      <div className="grid xxl:grid-cols-4 md:!grid-cols-2">
+      <div className="grid xxl:grid-cols-4 md:!grid-cols-1">
         <div className="xxl:place-self-center md:!place-self-start">
           <img
             src={logo}
@@ -24,7 +24,7 @@ const Footer = () => {
             <img src={instagram} alt="instagram" />
             <img src={twitter} alt="twitter" />
           </div>
-          <h1 className="text-white ">
+          <h1 className="text-white mb-6">
             <span>
               <img className="inline pr-1" src={copyright} alt="copyright" />
             </span>
